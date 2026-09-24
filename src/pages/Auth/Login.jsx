@@ -149,23 +149,6 @@ const Login = () => {
                 <span>{loading ? "Signing in..." : "Sign In to Client Portal"}</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
-
-              {/* Quick Demo Fill */}
-              <div className="pt-3 border-t border-slate-800/80">
-                <p className="text-[11px] text-slate-400 text-center mb-1.5 font-medium">
-                  Quick Demo Access
-                </p>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setLoginEmail("poojaprajapati2532@gmail.com");
-                    setLoginPassword("Admin@123");
-                  }}
-                  className="w-full py-1.5 px-3 bg-slate-950 hover:bg-slate-800 border border-slate-800 rounded-xl text-[11px] text-sky-400 font-medium transition-colors"
-                >
-                  Use Demo Client Account (Pooja Prajapati)
-                </button>
-              </div>
             </form>
           ) : (
             /* Register Form */
